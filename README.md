@@ -13,7 +13,7 @@
 ~~~
 ## 开发建议
 ~~~
-建议注解在dao,service层 方法级别大于类级别
+建议@DynamicDataSource注解在dao,service层 方法级别大于类级别
 
 多数据源配置
 spring:
