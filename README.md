@@ -14,6 +14,23 @@
 ## 开发建议
 ~~~
 建议注解在dao,service层 方法级别大于类级别
+
+多数据源配置
+spring:
+    datasource:
+            datasource-name: default
+            url: jdbc:mysql://localhost:3306/dynamic_datasource?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: root
+    datasources:
+         -  datasource-name: slave
+            url: jdbc:mysql://localhost:3306/dynamic_datasource1?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: root
+         -  datasource-name: master
+            url: jdbc:mysql://localhost:3306/dynamic_datasource2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: root
 ~~~
 
 #### [更新日志 - GitHub](https://github.com/xphsc/easyjdbc/wiki/changelog)
