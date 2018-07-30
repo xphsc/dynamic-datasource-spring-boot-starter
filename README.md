@@ -33,5 +33,5 @@ spring:
             password: root
 ~~~
 
-#### [更新日志 - GitHub](https://github.com/xphsc/easyjdbc/wiki/changelog)
+#### [更新日志 - GitHub](https://github.com/xphsc/dynamic-datasource-spring-boot-starter/wiki/changelog)
 
